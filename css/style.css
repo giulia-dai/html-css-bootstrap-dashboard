@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --aside-color: #142940;
+}
+
+.ms_navbar{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main{
+ height: calc(100vh - 100px);
+ background-color: aqua;
+}
+
+aside{
+    background-color: var(--aside-color);
+    width: 70px; 
+}
+
+.ms_content{
+    width: calc(100% - 70px);
+}
+
+/* DEBUG */
+
+.debug .ms_navbar{
+    background-color: cornflowerblue;
+}
+
+.debug aside{
+    height: 100%;
+}
+
+.box{
+    border: 1px dashed black;
+    width: 80px;
+    height: 80px;
+}
+
+
+
