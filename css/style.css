@@ -90,6 +90,7 @@ aside li:hover a{
     background-color: #838F97;
 }
 
+
 /* RESPONSIVE */
 @media all and (min-width: 992px) {
 
@@ -132,8 +133,5 @@ aside li:hover a{
 
     #offcanvasRight{
         width: 40%;
-    }
-
-
-    
+    }    
 }
