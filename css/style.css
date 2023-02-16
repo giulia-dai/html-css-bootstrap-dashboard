@@ -83,9 +83,8 @@ min-height: 90%;
     width: 100%;
 }
 
-.d-none-table{
-    display: none;
-}
+
+
 
 /* debug */
 .debug .content{
@@ -94,14 +93,6 @@ min-height: 90%;
 
 
 /* RESPONSIVE */
-
-@media all and(min-width: 768px) {
-    .d-none-table{
-        display: inline-block;
-    }
-    
-}
-
 @media all and (min-width: 992px) {
 
     header{
