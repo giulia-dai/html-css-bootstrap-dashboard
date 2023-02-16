@@ -19,7 +19,6 @@ main{
     width: 100%;
 }
 
-
 .fa-bell{
     color: #FF8F00;
     font-size: 20px;
@@ -44,7 +43,7 @@ aside ul > li{
 }
 
 li i{
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 
@@ -83,14 +82,13 @@ min-height: 90%;
     width: 100%;
 }
 
-
-
-
-/* debug */
-.debug .content{
-    background-color: salmon;
+#offcanvasRight{
+    width: 100%;
 }
 
+aside li:hover a{
+    background-color: #838F97;
+}
 
 /* RESPONSIVE */
 @media all and (min-width: 992px) {
@@ -128,14 +126,14 @@ min-height: 90%;
         padding-left: 10px;
     }
 
-    li i{
-        font-size: 20px;
-    }
-
     .ms_sidebar-bottom{
         font-size: 20px;
-
     }
+
+    #offcanvasRight{
+        width: 40%;
+    }
+
 
     
 }
