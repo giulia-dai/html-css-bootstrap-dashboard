@@ -29,23 +29,19 @@ header > nav{
     background-color: #E5E5E5;
 }
 
+aside{
+    width: 80px;   
+}
+
 .sidebar{
-    width: 80px;
-    height: calc(100vh - 80px);
+    width: 100%;
 }
 
 .content{
-    width: calc(100% - 80px);
-    margin-left: 80px;
-    height: 300px;
-    background-color: salmon;
+    
 }
 
 /* debug */
-header > nav{
-    background-color: lightpink;
-}
-
 main{
     background-color: lightblue;
    
@@ -53,6 +49,11 @@ main{
 
 .sidebar{
     background-color: darkseagreen;
+}
+
+.debug .content{
+    min-height: 300px;
+    background-color: salmon;
 }
 
 @media all and (min-width: 992px) {
@@ -76,6 +77,10 @@ main{
 
     .ms_none-lg{
         display: none;
+    }
+
+    .sidebar{
+        width: 100px;
     }
     
 }
