@@ -6,6 +6,10 @@ header > nav{
     height: 100%;
 }
 
+main{
+    height: calc(100vh - 80px);
+}
+
 .ms_logo-box{
     width: 80px;
     padding-top: 0.5rem;
@@ -31,29 +35,71 @@ header > nav{
 
 aside{
     width: 80px;   
+    background-color: #041E34;
+    background-image: url(../img/sidebar-bg.png);
 }
 
-.sidebar{
-    width: 100%;
+aside ul > li{
+    list-style: none;
+}
+
+li i{
+    font-size: 30px;
+    color: white;
+}
+
+.ms_sidebar-top{
+min-height: 90%;
+}
+
+.ms_sidebar-bottom{
+    font-size: 30px;
+}
+
+.ms_p{
+    padding-left: 20px;
 }
 
 .content{
-    
+    width: calc(100% - 80px);
+    overflow-y: scroll;
+}
+
+.ms_bg-blue{
+    background-color: #1D72E8;
+
+}
+
+.ms_pill-blue{
+    background-color: #165BBA;
+}
+
+.ms_img-table{
+    width: 20px;
+    display: inline-block;
+}
+
+.ms_size-img-table{
+    width: 100%;
+}
+
+.d-none-table{
+    display: none;
 }
 
 /* debug */
-main{
-    background-color: lightblue;
-   
-}
-
-.sidebar{
-    background-color: darkseagreen;
-}
-
 .debug .content{
-    min-height: 300px;
     background-color: salmon;
+}
+
+
+/* RESPONSIVE */
+
+@media all and(min-width: 768px) {
+    .d-none-table{
+        display: inline-block;
+    }
+    
 }
 
 @media all and (min-width: 992px) {
@@ -79,8 +125,26 @@ main{
         display: none;
     }
 
-    .sidebar{
+    aside{
         width: 100px;
     }
+
+    .content{
+        width: calc(100% - 100px);
+    }
+
+    .ms_p{
+        padding-left: 10px;
+    }
+
+    li i{
+        font-size: 20px;
+    }
+
+    .ms_sidebar-bottom{
+        font-size: 20px;
+
+    }
+
     
 }

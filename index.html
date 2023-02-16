@@ -47,37 +47,284 @@
         </nav>
     </header>
 
-    <main>
+    <main class="d-flex">
 
        <aside>
-         <div class="container-fluid p-0 m-0 g-0">
-            <div class="row">
-               <div class="sidebar">
-                    sidebar
-                    sidebar
-                    sidebar
-                    sidebar
-                    sidebar
-                    sidebar
-                    sidebar
-                    sidebar
-                    sidebar
-        
-                </div>
-            </div>
-         </div>
+
+        <ul class="ms_p mt-3 ms_sidebar-top">
+          <li>
+            <a class="text-decoration-none text-white" href="#">
+              <i class="fa-solid fa-house"></i> 
+              <span class="ps-1 ms_d-none">Home</span>
+            </a>
+            
+          </li>
+
+          <li class="py-3">
+            <a class="text-decoration-none text-white" href="#">
+              <i class="fa-solid fa-chart-simple"></i> 
+              <span class="ps-2 ms_d-none">Stats</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="text-decoration-none text-white" href="#">
+              <i class="fa-solid fa-signal"></i> 
+              <span class="ps-1 ms_d-none">Signals</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="d-flex justify-content-center">
+          <a class="text-decoration-none text-white" href="#">
+            <i class="fa-solid fa-gear ms_sidebar-bottom"></i>
+            <span class="ms_d-none ps-1">Admin</span>
+          </a>
+        </div>
+ 
       </aside>
 
-      <div class="container">
-        <div class="row">
-            <div class="content">
-                content
+          <!-- MAIN PRINCIPALE -->
 
-            </div>
+      <div class="content">
+        <div class="container-fluid">
+            <div class="row">
 
-        </div>
+                  <!-- MAIN TOP BG-BLUE -->
 
-      </div>
+                 <div class="col-12 ms_bg-blue d-flex flex-column flex-md-row justify-content-md-around">
+
+                    <span class="text-white p-3 fw-semibold order-sm-3">Nuovo Studente
+                       <a class="text-white text-decoration-none" href="#"> 
+                        <i class="fa-solid fa-plus border p-2 "></i>
+                       </a>
+                    </span>
+                
+                    <div class="text-white p-2 order-sm-1">
+
+                       <span class="fw-semibold fs-2"> Boolean
+
+                         <span class="badge rounded-pill ms_pill-blue fs-6">
+                          <a class="text-decoration-none text-white" href="#">Piano blaze</a> 
+                        </span>
+                       </span>
+
+                       <div class="py-1">
+                        <span class="badge rounded-pill ms_pill-blue fs-6">
+                          <a class="text-decoration-none text-white" href="#">3 app</a> 
+                        </span>
+
+                        <span> >> </span>
+
+                        <span class="badge rounded-pill ms_pill-blue fs-6 ms_none-lg"> 
+                         <a class="text-white text-decoration-none" href="#">+</a>  
+                        </span>
+
+                        <span class="badge rounded-pill ms_pill-blue fs-6 ms_d-none"> 
+                          <a class="text-white text-decoration-none" href="#">Boolean mobile app</a>  
+                        </span>
+
+                        <span class="badge rounded-pill ms_pill-blue fs-6 ms_d-none"> 
+                          <a class="text-white text-decoration-none" href="#">Boolean web app</a>  
+                        </span>
+
+                        <span class="badge rounded-pill ms_pill-blue fs-6 ms_d-none"> 
+                          <a class="text-white text-decoration-none" href="#">Boolean blog app</a>  
+                        </span>
+                       </div>
+                     </div>
+                  
+                    <div class="text-white p-3 order-sm-2">
+                      <div>Studenti online negli ultimi 30 minuti</div>
+                      <span class="fw-semibold fs-1">125</span>
+                    </div>
+                 </div>
+
+                 <div class="col-12 mt-3">
+                   <div class="card">
+                     <div class="card-header fs-5">
+                       Prossime Classi
+                     </div>
+                     <div class="card-body">
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                            <th class="fw-light" scope="col">Nome</th>
+                            <th class="fw-light d-none-table" scope="col">Data inizio</th>
+                            <th class="fw-light d-none-table" scope="col">ROI</th>
+                            <th class="fw-light" scope="col">Stato</th>
+                            <th class="fw-light" scope="col">Azioni</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 75</span>
+                            </th>
+                            <td class="d-none-table">15 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 76</span>
+                            </th>
+                            <td class="d-none-table">16 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 77</span>
+                            </th>
+                            <td class="d-none-table">17 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-warning text-white">Process</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 78</span>
+                            </th>
+                            <td class="d-none-table">18 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 79</span>
+                            </th>
+                            <td class="d-none-table">19 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-danger">Failed</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 80</span>
+                            </th>
+                            <td class="d-none-table">20 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 81</span>
+                            </th>
+                            <td class="d-none-table">21 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-danger">Failed</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">
+                              <span class="ms_img-table"> 
+                              <img class="ms_size-img-table" src="img/class-avatar.jpg" alt="">  
+                              </span>
+                              <span>Classe 82</span>
+                            </th>
+                            <td class="d-none-table">22 Feb 2021</td>
+                            <td class="d-none-table">20%</td>
+                            <td>
+                              <span class="badge rounded-pill text-bg-success">Done</span>
+
+                            </td>
+                            <td>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-pencil border p-1"></i> </a>
+                              <a class="text-decoration-none text-secondary" href="#"> <i class="fa-solid fa-trash border p-1"></i> </a> 
+                            </td>
+                          </tr>                          
+                        </tbody>
+                      </table>
+                      
+                     </div>
+                  </div>
+
+                 </div>
+
+
+
+
+
+               </div>
+          </div>
+       </div>
 
 
 
